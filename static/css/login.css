@@ -1,0 +1,58 @@
+body {
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+}
+
+.login-container {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.logo {
+    width: 400px;
+    margin-bottom: 35px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.loginForm>input {
+    width: 335px;
+    height: 20px;
+    padding: 10px;
+    margin: 0 auto 30px;
+    display: block;
+}
+
+.btns {
+    width: 350px;
+    margin: 0 auto;
+}
+
+.login-btn,
+.switch-register-btn {
+    float: left;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin-left: 45px;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.btns>.switch-register-btn {
+    background-color: #67c23a;
+}
+
+.btns>.login-btn {
+    background-color: #409aff;
+    outline: none;
+    border: none;
+}

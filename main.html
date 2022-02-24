@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main</title>
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_2719661_afc2o4bk855.css">
+    <link rel="stylesheet" href="./static/css/reset.css">
+    <link rel="stylesheet" href="./static/css/main.css">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="header-container clear">
+        <a class="login-container" href="./main.html">
+            <img src="./static/img/logo.png" alt="">
+        </a>
+        <div class="user-info" id="userInfo">小丁</div>
+    </div>
+
+    <!-- 侧边栏 -->
+
+    <div class="nav-container">
+        <div class="nav-item active">学生列表</div>
+        <div class="nav-item">新增学生</div>
+        <div class="nav-item">查找学生</div>
+    </div>
+
+    <!-- 主体部分 -->
+    <div class="main-container">
+        <div class="content-item active">
+            <table class="table-container">
+                <thead>
+                    <tr>
+                        <th>学号</th>
+                        <th>姓名</th>
+                        <th>性别</th>
+                        <th> 年龄 </th>
+                        <th>电话</th>
+                        <th> 邮箱</th>
+                        <th> 地址</th>
+                        <th> 操作</th>
+                    </tr>
+                </thead>
+                <tbody id="tableContainer">
+                    <!-- <tr>
+                        <td>1203045560</td>
+                        <td>小明</td>
+                        <td>男</td>
+                        <td>38</td>
+                        <td>13755667780</td>
+                        <td>23345678@qq.com</td>
+                        <td>吉A22334</td>
+                        <td> <span class="edit " index="0 ">编辑</span> <span class="del " index="0 ">删除</span> </td>
+                    </tr> -->
+                </tbody>
+            </table>
+            <div class="page-controller-container">
+                <div id="previous" class="previous-btn icon iconfont icon-jiantou1 "></div>
+                <div class="page-container" id="paginationContainer">
+
+                </div>
+                <div id="next" class="next-btn icon iconfont icon-jiantou "></div>
+
+            </div>
+        </div>
+        <div class="content-item ">
+            <form id="addForm " class="user-form ">
+                <div class="item form-item ">
+                    <label for="name ">姓名：</label>
+                    <input type="text " id="userName ">
+                </div>
+                <div class="item form-item ">
+                    <label for="sNo ">学号：</label>
+                    <input type="text " id="userSNo ">
+                </div>
+                <div class="item form-item ">
+                    <label for="sex ">性别：</label>
+                    <select id="userSex ">
+                <option value="0 ">男</option>
+                <option value="1 ">女</option>
+            </select>
+                </div>
+                <div class="item form-item ">
+                    <label for="birth ">生日：</label>
+                    <input type="text " id="userBirth ">
+                </div>
+                <div class="item form-item ">
+                    <label for="phone ">电话：</label>
+                    <input type="text " id="userPhone ">
+                </div>
+                <div class="item form-item ">
+                    <label for="address ">地址：</label>
+                    <input type="text " id="userAddress ">
+                </div>
+                <div class="item form-item ">
+                    <label for="email ">邮件：</label>
+                    <input type="text " id="userEmail ">
+                </div>
+                <div class="btns ">
+                    <div class="add-btn " id="addBtn ">添加</div>
+                    <input type="reset " value="重置 " class="reset-btn ">
+                </div>
+            </form>
+
+        </div>
+        <div class="content-item ">查找学生内容</div>
+    </div>
+
+    <div id="dialogContainer " class="dialog-container ">
+        <div class="dialog-main ">
+            <form id="updateForm " class="user-form ">
+                <div class="item form-item ">
+                    <label for="name ">姓名：</label>
+                    <input type="text " id="name ">
+                </div>
+                <div class="item form-item ">
+                    <label for="sNo ">学号：</label>
+                    <input type="text " id="sNo " readonly=" ">
+                </div>
+                <div class="item form-item ">
+                    <label for="sex ">性别：</label>
+                    <select id="sex ">
+                      <option value="0 ">男</option>
+                      <option value="1 ">女</option>
+                  </select>
+                </div>
+                <div class="item form-item ">
+                    <label for="birth ">生日：</label>
+                    <input type="text " id="birth ">
+                </div>
+                <div class="item form-item ">
+                    <label for="phone ">电话：</label>
+                    <input type="text " id="phone ">
+                </div>
+                <div class="item form-item ">
+                    <label for="address ">地址：</label>
+                    <input type="text " id="address ">
+                </div>
+                <div class="item form-item ">
+                    <label for="email ">邮件：</label>
+                    <input type="text " id="email ">
+                </div>
+                <div class="btns ">
+                    <div class="add-btn " id="updateBtn ">修改</div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="./static/js/ajax.js "></script>
+    <script src="./static/js/main.js "></script>
+</body>
+
+</html>

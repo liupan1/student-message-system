@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册界面</title>
+    <link rel="stylesheet" href="./static/css/reset.css">
+    <link rel="stylesheet" href="./static//css/register.css">
+</head>
+
+<body>
+    <a href="./main.html" class="logo">
+        <img src="./static/img/logo.png" alt="">
+    </a>
+    <div class="text-container">
+        <h3 class="fs-60">用前端</h3>
+        <div class="text">让用户有更好的体验</div>
+    </div>
+    <div class="form-container">
+        <div class="form-title">
+            <h3>欢迎注册</h3>
+            <div>已有账号? <a href="./index.html">登录</a></div>
+        </div>
+        <form class="form-body" id="register">
+            <div class="form-item clear">
+                <label for="userName">用户名:</label>
+                <input type="text" id="userName">
+                <!-- tip区域 -->
+                <div id="promptTxt" class="prompt-txt">
+                    设置后不可更改，中英文均可，最长14个英文或7个汉字
+                </div>
+                <div class="err-message" id="errorTipMsg">
+                    用户名仅支持中英文、数字和下划线,且不能为纯数字
+                </div>
+            </div>
+            <div class="form-item clear">
+                <label for="userAccount">账号:</label>
+                <input type="text" id="userAccount">
+            </div>
+            <div class="form-item clear">
+                <label for="userPassword">密码:</label>
+                <input type="password" id="userPassword">
+            </div>
+            <div class="form-item  clear">
+                <label for="confirmPassword">密码:</label>
+                <input type="password" id="confirmPassword">
+            </div>
+            <input class="register-btn" type="submit" id="submitBtn" value="注册">
+    </div>
+    <script src="./static/js/ajax.js"></script>
+    <script src="./static/js/register.js"></script>
+</body>
+
+</html>

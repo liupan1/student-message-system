@@ -1,0 +1,126 @@
+body {
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+}
+
+.logo {
+    position: absolute;
+    left: 70px;
+    top: 50px;
+}
+
+.logo img {
+    width: 320px;
+    height: 50px;
+}
+
+.text-container {
+    position: absolute;
+    left: 196px;
+    top: 325px;
+    color: #ffffff;
+    font-size: 34px;
+}
+
+.fs-60 {
+    font-size: 60px;
+}
+
+.form-container {
+    position: absolute;
+    right: 140px;
+    width: 479px;
+    height: 680px;
+    background-color: rgba(255, 255, 255, .9);
+    top: 50%;
+    margin-top: -340px;
+    border-radius: 12px;
+}
+
+.form-title {
+    margin-top: 56px;
+    margin-left: 35px;
+}
+
+.form-title h3 {
+    font-size: 40px;
+}
+
+.form-title a {
+    color: #2e58fe;
+}
+
+.form-body {
+    margin-top: 70px;
+}
+
+label {
+    height: 40px;
+    line-height: 40px;
+    text-align: right;
+    width: 80px;
+    margin-right: 13px;
+    float: left;
+}
+
+.form-body .form-item input {
+    height: 38px;
+    width: 326px;
+    outline: none;
+    text-indent: 20px;
+    border: 1px solid #ddd;
+    float: left;
+    border-radius: 4px;
+}
+
+.form-body .form-item input:focus {
+    border-color: #409eff;
+}
+
+.form-body>.form-item {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.register-btn {
+    width: 397px;
+    height: 48px;
+    display: block;
+    border-radius: 24px;
+    margin: 0 auto;
+    outline: none;
+    border: none;
+    color: #fff;
+    background: #3f89ec;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.prompt-txt {
+    width: 317px;
+    height: 39px;
+    line-height: 30px;
+    position: absolute;
+    top: -46px;
+    left: 97px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    background-size: cover;
+    display: none;
+    background-image: url(../img/check-username-bg.png);
+}
+
+.error-inp {
+    border-color: #f55!important;
+}
+
+.err-message {
+    font-size: 12px;
+    color: #f55;
+    position: absolute;
+    left: 97px;
+    top: 43px;
+    display: none;
+}
